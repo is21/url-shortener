@@ -1,0 +1,70 @@
+body {
+  font-family: roboto, sans-serif;
+}
+
+.h1-material {
+  font-size: 48pt;
+  font-weight: lighter;
+  letter-spacing: -1.5pt;
+}
+
+.subtitle-1-material {
+  font-size: 16pt;
+  font-weight: normal;
+  letter-spacing: .15pt;
+}
+
+.body-1-material {
+  font-size: 16pt;
+  line-height: 24pt;
+  font-weight: normal;
+}
+
+.text-field-material {
+  height: 56px;
+  font-size: 16pt;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 24pt 0 24pt 0;
+  padding-left: 12pt;
+  ;
+}
+
+.button-primary-material {
+  font-size: 14pt;
+  height: 48pt;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .5pt;
+  background-color: #ff69b4;
+  border-radius: 2pt;
+  box-sizing: border-box;
+  border: none;
+  margin: 0 0 24pt 0;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 16px;
+  align-content: center;
+  // background-color: pink;
+}
+
+.item-1 {
+  // background-color: green;
+}
+.item-2 {
+  // background-color: blue;
+  grid-column: 2 /  4;
+  text-align: center;
+}
+.item-3 {
+  // background-color: yellow;
+}
+.item-4 {
+  // background-color: blue;
+}

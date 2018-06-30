@@ -12,6 +12,9 @@ function shortenUrl() {
     if(xhr.readyState === XMLHttpRequest.DONE){
       renderResponse(xhr.response);
     }
+    else {
+      displayLoadingMessage();
+    }
   }
   xhr.open('POST', rebrandlyUrl, true)
   xhr.setRequestHeader('Content-type', 'application/json')
@@ -21,9 +24,13 @@ function shortenUrl() {
 
 function renderResponse(res){
   if(res.errors){
-    responseField.innerHTML = "<p>Your URL couldn't be shortened. Try again, please.</p>"
+    responseSection.innerHTML = "<p>Your URL couldn't be shortened. Try again, please.</p>"
   }
   else {
-    responseField.innerHTML = `<p>Short URL: ${res.shortUrl}</p>`;
+    responseSection.innerHTML = `<p>Your short URL is <b>${res.shortUrl}</b></p>`;
   }
+}
+
+function displayLoadingMessage() {
+  responseSection.innerHTML = "<p>Shortening your URL...</p>"
 }
