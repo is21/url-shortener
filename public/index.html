@@ -5,20 +5,17 @@
     <title>URL Shortener</title>
   </head>
   <body>
-    <script type="text/javascript" src="main.js">
-
-    </script>
+    <script type="text/javascript" src="main.js"></script>
     <h1>URL Shortener</h1>
 
     <p>We make long URLs short.</p>
 
-    <form id="form" autocomplete="off" onsubmit="shortenUrl()">
-      <input id= "longUrl" type="text" name="" value="">
+    <form id="form" autocomplete="off" onsubmit="shortenUrl(); return false">
+      <input id= "longUrl" type="url" name="" value="">
       <input type="submit" name="" value="Submit">
     </form>
 
     <div id="responseField">
-      <!-- Short URL goes here -->
     </div>
 
   </body>
