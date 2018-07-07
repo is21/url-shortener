@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>URL Shortener</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script type="text/javascript" src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <div class="grid-container">
-      <div class="item-1"></div>
-      <div class="item-2">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <div class="grid-container">
+    <div class="item-1">
       <h1 class="h1-material">URL Shortener</h1>
       <p class="subtitle-1-material">We make long URLs short.</p>
       <form id="form" autocomplete="off" onsubmit="shortenUrl(); return false">
         <input class="text-field-material"id= "longUrl" type="url" placeholder="Type a URL and hit Enter"="" value="">
         <input class="button-primary-material"type="submit" name="" value="Shorten URL">
       </form>
-      <span id="responseSection"></div>
-      <div class="item-3"></div>
-      <div class="item-4"></div>
+      <div class="body-1-material" id="responseSection"></div>
     </div>
+    <div class="item-2">
+      <div id="snackbar"></div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
